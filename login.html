@@ -9,18 +9,20 @@
 <body>
     <form class="login-box">
         <div class="avatar-container">
-                        <span class="avatar-icon" aria-label="Avatar usuario">
-                                <svg width="96" height="96" viewBox="0 0 96 96" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <circle cx="48" cy="48" r="46" fill="#006690" stroke="#003057" stroke-width="4"/>
-                                    <circle cx="48" cy="40" r="18" fill="#fff"/>
-                                    <ellipse cx="48" cy="72" rx="24" ry="14" fill="#fff"/>
-                                </svg>
-                        </span>
+            <span class="avatar-icon" aria-label="Avatar usuario">
+                <svg width="96" height="96" viewBox="0 0 96 96" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <circle cx="48" cy="48" r="46" fill="#006690" stroke="#003057" stroke-width="4"/>
+                  <circle cx="48" cy="40" r="18" fill="#fff"/>
+                  <ellipse cx="48" cy="72" rx="24" ry="14" fill="#fff"/>
+                </svg>
+            </span>
         </div>
         <h2>Login</h2>
-        <input type="text" id="usuario" name="usuario" required placeholder="Usuario">
-        <input type="password" id="contrasena" name="contrasena" required placeholder="Contraseña">
+        <input type="text" id="usuario" name="usuario" placeholder="Usuario">
+        <input type="password" id="contrasena" name="contrasena" placeholder="Contraseña">
         <button type="submit">Ingresar</button>
+        <div id="login-error" class="login-error" style="display:none;"></div>
     </form>
+    <script src="login.js"></script>
 </body>
 </html>

@@ -1,3 +1,11 @@
+/* Mensaje de error login */
+.login-error {
+    color: #f20008;
+    font-size: 0.95rem;
+    margin-top: 0.5rem;
+    text-align: center;
+    font-weight: bold;
+}
 /* Avatar styles */
 .avatar-container {
     display: flex;
