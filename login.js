@@ -6,6 +6,16 @@ document.addEventListener('DOMContentLoaded', function () {
   const errorDiv = document.getElementById('login-error');
   if (!form) return;
 
+  // Lista de usuarios y contraseñas válidas
+  const usuarios = {
+    'Admin': '1234',
+    'Ginett': '2345',
+    'Oscar': '3456',
+    'Cristian': '4567',
+    'Luis': '5678',
+    'Felipe': '6789'
+  };
+
   form.addEventListener('submit', function (e) {
     e.preventDefault();
     const usuario = document.getElementById('usuario').value.trim();
@@ -15,8 +25,15 @@ document.addEventListener('DOMContentLoaded', function () {
       errorDiv.style.display = 'block';
       return;
     }
-    errorDiv.style.display = 'none';
-    // Aquí puedes agregar la lógica de autenticación
-    alert(`Bienvenido, ${usuario}!`);
+
+    if (usuarios[usuario] && usuarios[usuario] === contrasena) {
+      errorDiv.textContent = 'Login Exitoso';
+      errorDiv.style.display = 'block';
+      errorDiv.style.color = '#28a745'; // verde
+    } else {
+      errorDiv.textContent = 'Usuario o contraseña incorrectos.';
+      errorDiv.style.display = 'block';
+      errorDiv.style.color = '#f20008'; // rojo
+    }
   });
 });
