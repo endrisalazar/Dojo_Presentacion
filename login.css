@@ -1,0 +1,104 @@
+/* Avatar styles */
+.avatar-container {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 1rem;
+}
+.avatar-img {
+    display: none;
+}
+.avatar-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 96px;
+    height: 96px;
+    border-radius: 50%;
+    box-shadow: 0 2px 8px rgba(0,48,87,0.15);
+    background: #fff;
+    border: 4px solid #006690;
+    margin: 0 auto;
+    overflow: hidden;
+}
+.avatar-icon svg {
+    display: block;
+}
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: #003057; /* Azul aún más oscuro */
+}
+.login-box {
+    background: #fff;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,48,87,0.15); /* sombra azul oscuro */
+    width: 300px;
+    border: 2px solid #c2bbb5; /* Gris/Plata */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.login-box h2 {
+    text-align: center;
+    margin-bottom: 1.5rem;
+    color: #006690; /* Azul oscuro */
+}
+.login-box label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+    color: #003057; /* Azul aún más oscuro */
+    width: 90%;
+    max-width: 240px;
+    text-align: left;
+    margin-left: auto;
+    margin-right: auto;
+}
+.login-box input[type="text"],
+.login-box input[type="password"] {
+    display: block;
+    margin: 0 auto 1rem auto;
+    width: 90%;
+    max-width: 240px;
+    padding: 0.5rem;
+    border: 1px solid #c2bbb5; /* Gris/Plata */
+    border-radius: 4px;
+    background: #f8f8f8;
+    color: #003057;
+    box-sizing: border-box;
+    text-align: left;
+}
+.login-box input[type="text"]:focus,
+.login-box input[type="password"]:focus {
+    outline: none;
+    border-color: #006690; /* Azul oscuro */
+    box-shadow: 0 0 4px #00669033;
+}
+.login-box button {
+    display: block;
+    margin: 0 auto;
+    width: 90%;
+    max-width: 240px;
+    padding: 0.5rem;
+    background: #006690; /* Azul oscuro */
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background 0.2s;
+    box-sizing: border-box;
+}
+.login-box button:hover {
+    background: #f20008; /* Rojo/Granate */
+    color: #fff;
+}
+/* Acento granate para detalles opcionales */
+.login-box input[type="text"]::placeholder,
+.login-box input[type="password"]::placeholder {
+    color: #934f46;
+    opacity: 1;
+}
