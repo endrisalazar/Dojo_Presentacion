@@ -1,0 +1,36 @@
+# Node modules
+node_modules/
+
+# Dependency directories
+dist/
+build/
+
+# System files
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+
+# Environment files
+.env
+.env.*
+
+# VSCode settings
+.vscode/
+
+# Python
+__pycache__/
+*.pyc
+
+# Windows
+*.exe
+*.dll
+*.pdb
+
+# Mac
+*.DS_Store
+
+# Others
+*.swp
+*.swo
